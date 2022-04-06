@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+	<test name="Personal Loan">
+		<!-- This is to run/exclude the methods with group name Smoke-->
+		<!-- To pick test cases to your regression test cases -->
+		<groups>
+			<run>
+				<!-- <exclude name="Smoke"></exclude> -->
+				<include name="Smoke"></include>
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="testng_tutorial.Day1"/>
+
+			<class name="testng_tutorial.Day2" />
+
+			<class name="testng_tutorial.Day4"/>
+
+			<class name="testng_tutorial.Day3"/>
+		</classes>
+	</test> 
+
+</suite> <!-- Suite -->
